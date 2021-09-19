@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1 Paskaita</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-big">
+            <div class="container-medium">
+                <div class="container-small">
+                    <h1 class="heading-main">Form</h1>
+                    <form class="form" action="blank.html">
+                        <div class="form__group">
+                            <input type="text" name="name" id="fname" class="name-input"
+                                placeholder="Enter Your First Name" required>
+                            <label for="fname" class="name-label">Enter Your First Name</label>
+                            <input type="text" name="lname" id="lname" class="name-input"
+                                placeholder="Enter Your Last Name" required>
+                            <label for="lname" class="name-label">Enter Your Last Name</label>
+                        </div>
+                        <div class="form__group">
+
+                            <input type="email" name="email" id="email" class="email-input"
+                                placeholder="Enter Your Email" required>
+                            <label for="email" class="email-label">Enter Your Email</label>
+                        </div>
+                        <div class="form__group">
+
+                            <input type="tel" name="tel-number" id="phone" class="tel-input" required
+                                pattern="[+][3][7][0][0-9]{8}" placeholder="+370 XXX XXXXX">
+                            <label for="phone" class="tel-label">Enter Your Phone Number</label>
+                        </div>
+
+                        <label for="rent" class="select-label">Choose a vehicle you want to rent</label>
+                        <select name="rent" id="rent" class="select-input">
+                            <option value="car">Car</option>
+                            <option value="bicycle">Bicycle</option>
+                            <option value="scooter">Scooter</option>
+                        </select>
+                        <div class="form__group-1">
+                            <p class="form__paragraph">Do you have a license?</p>
+                            <label for="license-y" class="radio-label">Yes</label>
+                            <input type="radio" name="license" id="license-y" class="radio-input">
+                            <label for="license-n" class="radio-label">No</label>
+                            <input type="radio" name="license" id="license-n" class="radio-input">
+                        </div>
+                        <div class="form__group">
+
+                            <input type="datetime-local" name="rent-from" id="rent-from" required
+                                value="2021-07-20T07:30" min="2021-07-20T00:00" max="2021-09-01T00:00"
+                                class="date-input">
+                            <label for="rent-from" class="date-label">Choose a date you want to rent from</label>
+
+                            <input type="datetime-local" name="rent-to" id="rent-to" value="2021-07-21T19:30"
+                                min="2021-07-21T00:00" max="2021-10-01T00:00" required class="date-input">
+                            <label for="rent-to" class="date-label">Choose a date you want to rent to</label>
+                        </div>
+                        <div class="form__group">
+                            <input list="city">
+                            <datalist id="city" class="datalist-input">
+                                <option value="Vilnius"></option>
+                                <option value="Kaunas"></option>
+                                <option value="Klaipeda"></option>
+                            </datalist>
+                            <label for="city" class="datalist-label">Select a city you want to rent a car from</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="submit" value="Submit" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

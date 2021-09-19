@@ -1,0 +1,109 @@
+.footer{
+    background-color: #F6F3EA;
+    width: 100%;
+    
+    &__content{
+        display: grid;
+        justify-items: start;
+        padding-top: $padding-big;
+        padding-bottom: $padding-big;
+        padding-left: $padding-small;
+        padding-right: $padding-small;
+    }
+
+    &__img{
+        padding-bottom: 3rem;
+    }
+
+    &__text{
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        padding-bottom: 3rem;
+        max-width: 25rem;
+    }
+
+    &__link{
+        list-style: none;
+        margin-bottom: 3rem;
+
+        &__item{
+            margin-bottom: 2rem;
+
+        }
+        &__item a{
+            text-decoration: none;
+            color: $color-tertiary;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__form{
+        position: relative;
+
+        &__email{
+            max-width: 51rem;
+            width: 70vw;
+            padding: 2rem;
+            border-radius: 5rem;
+            border: none;
+        }
+        &__button{
+            position: absolute;
+            top: -1.5rem;
+            right: -1rem;
+            border-radius: 5rem;
+        }
+    }
+    &__heading{
+        font-size: 2rem;
+        color: $color-tertiary;
+        margin-top: 2rem;
+    }
+    &__social{
+        margin-top: 2rem;
+        margin-left: 1rem;
+
+        &__item{
+            margin-right: 2rem;
+            font-size: 1.6rem;
+            border-radius: 10rem;
+            padding: 1.5rem;
+            background-color: $color-white;
+            color: black;
+            transition: all .2s;
+        }
+        &__item:hover{
+            color: blue;
+        }
+    }
+}
+.footer-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-top: 1px solid #c7cdd1;
+
+    &__text{
+        font-size: 1.6rem;
+        color: $color-secondary;
+
+    }
+}
+@media only screen and (min-width: 768px) {
+    .footer{
+        display: grid;
+        justify-items: center;
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: $max-width;
+        }
+        &__form{
+            &__email{
+                width: 31rem;
+            }
+        }
+    }
+}

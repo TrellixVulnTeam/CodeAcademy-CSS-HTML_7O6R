@@ -1,0 +1,55 @@
+$color-primary: #a03434;
+$color-secondary: rgb(121, 121, 121);
+
+%flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%
+}
+body{
+    padding: 2rem 2rem 0 2rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(540px, 1fr));
+    max-width: 130rem;
+    justify-content: center;
+}
+.magazee__card{
+    @extend %flex-centered;
+    height: 400px;
+    background-color: $color-primary;
+    font-size: 5rem;
+
+}
+.magazee__description{
+    padding: 5rem;
+    font-size: 2rem;
+    color: $color-secondary;
+    @extend %flex-centered;
+}
+s
+
+.feature{
+    width: 540px;
+}
+.tm-section__card{
+
+        &__img{
+            width: 100%;
+            max-width: 540px;
+        }
+}

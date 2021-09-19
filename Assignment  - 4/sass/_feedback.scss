@@ -1,0 +1,86 @@
+.feedback{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+
+    &__content{
+        display: grid;
+        justify-items: center;
+        padding-top: $padding-big;
+        padding-bottom: $padding-big;
+        text-align: center;
+        padding-left: $padding-small;
+        padding-right: $padding-small;
+        max-width: $max-width;
+    }
+
+    &__testi{
+        font-size: 1.4rem;
+        color: $color-secondary;
+        margin-bottom: 1rem;
+    }
+
+    &__heading{
+        font-size: 4rem;
+        color: $color-tertiary;
+        margin-bottom: 1rem;
+    }
+    &__paragraph{
+        color: $color-tertiary-light-2;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+    &__card{
+        display: grid;
+        justify-items: center;
+        border: 1px solid #E6F0FA;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+        &--icon{
+            font-size: 5rem;
+            padding-bottom: 2rem;
+            color: $color-secondary;
+        }
+
+        &--text{
+            font-size: 1.6rem;
+            color: $color-tertiary-light-2;
+            padding-bottom:1rem ;
+        }
+
+        &--stars{
+            color: rgb(255, 208, 0);
+            font-size: 1.6rem;
+            padding-bottom: 2rem;
+        }
+        &--head{
+            padding-bottom:1rem ;
+            height: 7.5rem;
+            width: 7.5rem;
+            border-radius: 10rem;
+        }
+        &--name{
+            font-size: 2.4rem;
+            padding-bottom:.5rem;
+            color: $color-tertiary;
+        }
+
+        &--job{
+            font-size: 1.4rem;
+            color: $color-tertiary;
+        }
+
+    }
+}
+@media only screen and (min-width: 768px){
+    .feedback{
+
+        &__cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            width: 100%;
+        }
+    }
+}

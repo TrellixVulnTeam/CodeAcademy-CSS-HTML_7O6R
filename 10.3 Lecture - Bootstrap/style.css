@@ -1,0 +1,33 @@
+.nav-item{
+    height: 100%;
+}
+.nav a{
+    color: grey;
+}
+.nav a:hover{
+    background-color: yellow;
+    color: black;
+    
+}
+.navbar-brand{
+    color: yellow !important;
+}
+.navbar{
+    height: 10vh;
+}
+.navbar-toggler{
+    fill: yellow;
+}
+.container-fluid{
+    height: 100%;
+}
+.img{
+    height: 100%;
+    min-height: 40rem;
+    max-height: 40rem;
+    object-fit: cover;
+    filter: blur(100%);
+}
+.yellow{
+    color: yellow;
+}

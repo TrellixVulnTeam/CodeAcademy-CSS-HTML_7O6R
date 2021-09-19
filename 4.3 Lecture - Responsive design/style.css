@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.container{
+    margin: 0 auto;
+}
+.header1,
+.header2{
+    height:5rem;
+    width: 100%;
+    background: orange;
+    margin: 1rem .5rem;
+}
+.main{
+    background: yellow;
+    height: 5rem;
+    width: 100%;
+    margin: 1rem .5rem;
+}
+.side1,
+.side2,
+.side3{
+    background: blue;
+    height: 10rem;
+    width: 100%;
+    margin: 1rem .5rem;
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4{
+    background: grey;
+    width: 100%;
+    height: 5rem;
+    margin: 1rem .5rem;
+}
+@media only screen and (min-width: 320px){
+
+    .header{
+        display: block;
+    }
+    .header1,
+    .header2{
+        height:5rem;
+        width: 100%;
+        background: orange;
+        display: block;
+    }
+    .main{
+        background: yellow;
+        height: 5rem;
+    }
+    .side1,
+    .side2,
+    .side3{
+        background: blue;
+        height: 10rem;
+        width: 100%;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4{
+        background: grey;
+        width: 100%;
+        height: 5rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .main{
+        height: 10rem;
+    }
+    .header{
+        display: block;
+        
+    }
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4{
+        width: 95%;
+        
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+        flex: 0 0 50%;
+
+      }
+}
+
+@media only screen and (min-width: 1024px){
+    .header{
+        display: flex;
+    }
+    .header1,
+    .header2{
+        height:5rem;
+        width: 95%;
+        
+}
+    .main{
+        height: 20rem;
+    }
+    .side{
+        display: flex;
+    }
+    .footer{
+        display: flex;
+    }
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4{
+        width: 95%;
+        overflow: hidden;
+    }
+
+}

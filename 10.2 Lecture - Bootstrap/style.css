@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+}
+.bg-image{
+    background-image: url('https://www.w3schools.com/w3images/onepage_restaurant.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.btn-wtdh-7{
+    width: 7rem;
+}
+.btn-wtdh-8{
+    width: 8rem;
+}
+.btn{
+    background-color: black;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    background-color: rgb(150, 163, 165);
+}
+.fs{
+    font-size: 4rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+

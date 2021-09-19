@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: violet;
+    width: 100%;
+    padding: 10px;
+}
+.brand__name{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+.text{
+    color: white;
+    background-color: tomato;
+    border: 1px solid grey;
+    padding: 15px;
+    transition: all .2s;
+    text-transform: uppercase;
+}
+.text:not(:first-child){
+    border-top: none;
+}
+.text:hover{
+    background-color: khaki;
+}
+
+
+@media only screen and (min-width:550px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

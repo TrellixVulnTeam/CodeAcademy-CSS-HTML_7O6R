@@ -1,0 +1,43 @@
+.magazee__card, .magazee__description {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+* {
+  box-sizing: border-box; }
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  padding: 2rem 2rem 0 2rem; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  max-width: 130rem;
+  justify-content: center; }
+
+.magazee__card {
+  height: 400px;
+  background-color: #a03434;
+  font-size: 5rem; }
+
+.magazee__description {
+  padding: 5rem;
+  font-size: 2rem;
+  color: #797979; }
+  .magazee__description::before, .magazee__description::after {
+    content: "''"; }
+
+s .feature {
+  width: 540px; }
+
+.tm-section__card__img {
+  width: 100%;
+  max-width: 540px; }

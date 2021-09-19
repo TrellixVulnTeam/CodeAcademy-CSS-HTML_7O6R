@@ -1,0 +1,108 @@
+/* 
+-- Menu font-family: Lato, sans-serif;
+-- Menu font color: #151515
+-- Menu button background-color: #b6b6b6
+*/
+
+/* YOUR CODE HERE ir beje sėkmės*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Lato, sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 2rem;
+}
+.nav__logo{
+    height: 5rem;
+}
+.nav__menu-icon{
+    height: 5rem;
+}
+.nav__items{
+    display: none;
+}
+.nav__btn{
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main__img{
+    width: 50%;
+    height: calc((100vh - 15vh) / 2 );
+    padding: 2rem;
+    object-fit: cover;
+}
+@media only screen and (min-width:768px) {
+    .nav__menu-icon{
+        display: none;
+    }
+    .nav__menu{
+        display: flex;
+        align-items: center;
+    }
+    .nav__items{
+        display:flex;  
+        list-style: none;
+        margin-right: 5rem;
+    }
+    .nav__item{
+        padding-right: 2rem;
+        font-size: 1.2rem;
+
+        transition: all .2s;
+    }
+    .nav__item a:link,
+    .nav__item a:active{
+        text-decoration: none;
+    }
+    .nav__item a{
+        color: #151515;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+    }
+    .nav__item:hover{
+        transform: translateY(-3px);
+    }
+    .nav__btn{
+        display: inline-block;
+        border: none;
+        background: #b6b6b6;
+        padding: 1.5rem 2rem;
+        color: #fff;
+        cursor: pointer;
+        font-family: inherit;
+    }
+    .nav__btn:hover{
+        background: #c4c3c3;
+
+    }
+    .main__img{
+        width: calc(100vw / 3);
+        padding: 3rem;
+    }
+}
+@media only screen and (min-width: 1200px) {   
+    .nav__items{
+        margin-right: 5rem;
+    }
+    .main__img{
+        width: calc(100% / 5);
+        padding: 3rem;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+}
